@@ -21,9 +21,3 @@ def parcours(node,code):
         if code == 1 :
             cpt += 1
             parcours(node.right,code[cpt])
-    
-    
-        
-freq = extract("exemple_freq.txt")
-tree = huffman_tree(freq)
-parcours(tree[0],str(extract_bin("exemple_comp.bin")))
